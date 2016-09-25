@@ -12,12 +12,24 @@ import {
   View
 } from 'react-native';
 
-class HelloWorld extends Component {
+class Greeting extends Component {
   render() {
     return (
-      <Text>Hello world!</Text>
+      <Text>Hello {this.props.name}!</Text>
     );
   }
 }
 
-AppRegistry.registerComponent('HelloWorld', () => HelloWorld);
+class LotsOfGreetings extends Component {
+  render() {
+    return (
+      <View style={{alignItems: 'center'}}>
+        <Greeting name='Rexxar' />
+        <Greeting name='Jaina' />
+        <Greeting name='Valeera' />
+      </View>
+    );
+  }
+}
+
+AppRegistry.registerComponent('HelloWorld', () => LotsOfGreetings);
