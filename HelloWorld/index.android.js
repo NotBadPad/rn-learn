@@ -5,7 +5,12 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
 class HelloWorld extends Component {
   render() {
@@ -15,5 +20,4 @@ class HelloWorld extends Component {
   }
 }
 
-// 注意，这里用引号括起来的'HelloWorldApp'必须和你init创建的项目名一致
-AppRegistry.registerComponent('HelloWorl', () => HelloWorld);
+AppRegistry.registerComponent('HelloWorld', () => HelloWorld);
